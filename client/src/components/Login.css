@@ -1,0 +1,5 @@
+.login-button {
+    border-radius: 50px;
+    filter: drop-shadow(1px 1px 1px #383d2c);
+    font-family:'Solid Mono', monospace;
+}
