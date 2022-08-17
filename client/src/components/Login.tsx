@@ -1,5 +1,5 @@
 import React from "react";
-import { IonGrid, IonRow, IonButton } from "@ionic/react";
+import { IonGrid, IonRow } from "@ionic/react";
 import './Login.css';
 
 const AUTH_URL =
@@ -9,11 +9,11 @@ export default function Login() {
   return (
     <IonGrid>
       <IonRow class="ion-justify-content-center">
-        <IonButton class="login-button" shape="round" color="success" size="large" style={{marginTop: "15rem"}}>
-          <a href={AUTH_URL} style={{ color: "black", textDecoration: "none", fontSize: "1.5rem", padding: "3rem"}}>
+        <button className="login-button">
+          <a href={AUTH_URL}>
             Login
           </a>
-        </IonButton>
+        </button>
       </IonRow>
     </IonGrid>
   );

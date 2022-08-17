@@ -1,5 +1,28 @@
 .login-button {
-    border-radius: 50px;
-    filter: drop-shadow(1px 1px 1px #383d2c);
-    font-family:'Solid Mono', monospace;
+    font-family:'Love';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+
+.login-button>a {
+    font-size: 8rem;
+    text-decoration: none;
+    transition: color 2s ease-out 100ms;
+}
+
+.login-button>a:hover {
+transition: background-color 2s ease-out 50ms;
+background-color: #1e1e1e;
+padding: 20px;
+color: #caff59;
+}
+
+@font-face {
+    /* font-family: 'Love';
+    src: url('../assets/fonts/Rift.otf'); */
+    font-family: 'Love';
+    src: url('../assets/fonts/Sansdria.ttf')
 }

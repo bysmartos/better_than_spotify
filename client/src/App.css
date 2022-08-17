@@ -7,3 +7,9 @@ center/cover;
 ion-content.ion-color-secondary{
         --ion-color-base: none !important;
 }
+
+IonImg {
+    z-index:-1;
+    position: relative;
+}
+
