@@ -234,9 +234,13 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
-/*
 @font-face {
-  font-family: 'Solid Mono', monospace;
-  src: url('/client/src/assets/fonts/Solid-Mono.ttf');
+  /* font-family: 'Love';
+  src: url('../assets/fonts/Rift.otf'); */
+  font-family: 'Sansdria';
+  src: url('../assets/fonts/Sansdria.ttf');
+
+  font-family: 'Solid Mono';
+  src: url('../assets/fonts/Solid-Mono.ttf');
 }
-*/
+

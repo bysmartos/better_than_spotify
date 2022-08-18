@@ -1,0 +1,9 @@
+ion-content{
+    --background: 
+url('../assets/images/bck.png') no-repeat 
+center/cover;
+}
+
+ion-content.ion-color-secondary{
+        --ion-color-base: none !important;
+}
