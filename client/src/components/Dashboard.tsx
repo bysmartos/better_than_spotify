@@ -95,7 +95,7 @@ export default function Dashboard({ code }: any) {
         style={{
           width: "50%",
           minWidth: "30rem",
-          //   position: "absolute",
+           //  position: "absolute",
           left: "50%",
           transform: "translate(-50%)",
           marginTop: "1.5rem",
