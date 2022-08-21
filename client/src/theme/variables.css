@@ -200,7 +200,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 
-    --ion-text-color: #ffffff;
+    --ion-text-color: #171717;
     --ion-text-color-rgb: 255,255,255;
 
     --ion-border-color: #222222;
@@ -241,6 +241,9 @@ http://ionicframework.com/docs/theming/ */
   src: url('../assets/fonts/Sansdria.ttf');
 
   font-family: 'Solid Mono';
-  src: url('../assets/fonts/Solid-Mono.ttf');
+  src: url('../assets/fonts/MonospaceTypewriter.ttf');
+
+  font-family: 'Monospace';
+  src: url('../assets/fonts/Roboto-Regular.ttf');
 }
 

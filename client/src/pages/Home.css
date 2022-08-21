@@ -2,10 +2,9 @@ ion-content{
     --background: 
 url('../assets/images/bck.png') no-repeat 
 center/cover;
-/* z-index: 0;
-position: relative; */
 }
 
 ion-content.ion-color-secondary{
         --ion-color-base: none !important;
 }
+

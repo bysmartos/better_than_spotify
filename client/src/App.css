@@ -1,15 +1,3 @@
-/* ion-content{
-    --background: 
-url('./assets/images/bck.png') no-repeat 
-center/cover;
+* {
+    scrollbar-width: none;
 }
-
-ion-content.ion-color-secondary{
-        --ion-color-base: none !important;
-}
-
-IonImg {
-    z-index:-1;
-    position: relative;
-}
- */
