@@ -94,8 +94,7 @@ export default function Dashboard({ code }: any) {
         placeholder="Search music"
         style={{
           width: "50%",
-          minWidth: "30rem",
-           //  position: "absolute",
+          minWidth: "19rem",
           left: "50%",
           transform: "translate(-50%)",
           marginTop: "1.5rem",
