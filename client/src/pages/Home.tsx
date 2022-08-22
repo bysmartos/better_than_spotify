@@ -6,7 +6,7 @@ import Blob from '../components/Blob';
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen class="no-scroll">
         <ExploreContainer />
         <Blob/>
       </IonContent>

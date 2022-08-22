@@ -122,11 +122,11 @@ export default function Dashboard({ code }: any) {
           marginLeft: "1rem",
           marginRight: "1rem",
           padding: "1.5rem",
-//          backgroundColor: "rgba(240, 240, 240, 0.3)",
+          backgroundColor: "rgba(240, 240, 240, 0.3)",
           borderRadius: "20px",
           fontFamily: "Solid Mono",
           textAlign: "center",
-          fontSize: "1rem",
+          fontSize: "0.8rem",
           fontWeight: "bold"}}>
             {lyrics}
           </div>

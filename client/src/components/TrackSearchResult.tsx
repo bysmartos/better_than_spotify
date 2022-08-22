@@ -33,7 +33,7 @@ export default function TrackSearchResult({ track, chooseTrack }: any) {
       />
       <div className="ml-3">
         <div style={{ color: "#1e1e1e", fontWeight: "bold", fontSize: "1rem"}}>{track.title}</div>
-        <div style={{ color: "#505050", fontSize: "0.9rem" }}>{track.artist}</div>
+        <div style={{ color: "#505050", fontSize: "0.8rem" }}>{track.artist}</div>
       </div>
     </div>
   );
