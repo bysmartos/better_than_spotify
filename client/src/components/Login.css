@@ -1,0 +1,26 @@
+.login-button {
+    font-family:'Sansdria';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+
+.login-button>a {
+    font-size: 8rem;
+    text-decoration: none;
+    transition: color 2s ease-out 100ms;
+}
+
+.login-button>a:hover {
+transition: background-color 2s ease-out 50ms;
+background-color: #1e1e1e;
+padding: 20px;
+color: #caff59;
+}
+
+/* @font-face {
+    font-family: 'Love';
+    src: url('../assets/fonts/Sansdria.ttf')
+} */

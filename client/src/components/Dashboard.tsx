@@ -85,7 +85,7 @@ export default function Dashboard({ code }: any) {
         display: "flex",
         flexDirection: "column",
         height: "100vh",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       }}
     >
       <IonSearchbar
@@ -94,13 +94,12 @@ export default function Dashboard({ code }: any) {
         placeholder="Search music"
         style={{
           width: "50%",
-          minWidth: "30rem",
-          //   position: "absolute",
+          minWidth: "19rem",
           left: "50%",
           transform: "translate(-50%)",
           marginTop: "1.5rem",
           color: "#AFFB0D",
-          fontFamily: "Solid Mono",
+          fontFamily: "Monospace",
         }}
       />
       <div
@@ -118,7 +117,17 @@ export default function Dashboard({ code }: any) {
           />
         ))}
          {searchResults.length === 0 && (
-          <div  style={{ whiteSpace: "pre" }}>
+          <div  style={{ 
+          marginTop: "1rem",
+          marginLeft: "1rem",
+          marginRight: "1rem",
+          padding: "1.5rem",
+          backgroundColor: "rgba(240, 240, 240, 0.3)",
+          borderRadius: "20px",
+          fontFamily: "Solid Mono",
+          textAlign: "center",
+          fontSize: "0.8rem",
+          fontWeight: "bold"}}>
             {lyrics}
           </div>
         )}

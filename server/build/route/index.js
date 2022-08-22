@@ -11,10 +11,10 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
     o[k2] = m[k];
 }));
 exports.__esModule = true;
-exports.reservasRoute = exports.userRoute = exports.experienciasRoute = void 0;
-var experienciasRoute_1 = require("./experienciasRoute");
-__createBinding(exports, experienciasRoute_1, "default", "experienciasRoute");
-var userRoute_1 = require("./userRoute");
-__createBinding(exports, userRoute_1, "default", "userRoute");
-var reservasRoute_1 = require("./reservasRoute");
-__createBinding(exports, reservasRoute_1, "default", "reservasRoute");
+exports.lyricsRoute = exports.refreskTokenRoute = exports.loginRoute = void 0;
+var loginRoute_1 = require("./loginRoute");
+__createBinding(exports, loginRoute_1, "default", "loginRoute");
+var refreshTokenRoute_1 = require("./refreshTokenRoute");
+__createBinding(exports, refreshTokenRoute_1, "default", "refreskTokenRoute");
+var lyricsRoute_1 = require("./lyricsRoute");
+__createBinding(exports, lyricsRoute_1, "default", "lyricsRoute");

@@ -6,7 +6,7 @@ exports.__esModule = true;
 var http_1 = __importDefault(require("http"));
 var app_1 = __importDefault(require("./app"));
 var server = http_1["default"].createServer(app_1["default"]);
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 3000;
 server.listen(PORT, function () {
     console.log("listening on ".concat(PORT));
 });
