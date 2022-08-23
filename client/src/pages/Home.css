@@ -1,9 +1,5 @@
-ion-content{
-    --background: 
-url('../assets/images/bck.png') no-repeat 
-center/cover;
+.home{
+    background-image: url('../assets/images/bck.png');
+    height: 100vh;
 }
 
-ion-content.ion-color-secondary{
-        --ion-color-base: none !important;
-}

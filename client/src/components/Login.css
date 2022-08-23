@@ -5,6 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: none;
+    z-index: 1;
 }
 
 .login-button>a {
@@ -19,6 +20,7 @@ background-color: #1e1e1e;
 padding: 20px;
 color: #caff59;
 }
+
 
 /* @font-face {
     font-family: 'Love';
