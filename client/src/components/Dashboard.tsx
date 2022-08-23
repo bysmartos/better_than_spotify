@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import TrackSearchResult from "./TrackSearchResult";
 import axios from "axios";
 
-
 const spotifyApi = new SpotifyWebApi({
   clientId: "a8a1a4312c3b48d09635eddbb5069353",
 });
@@ -19,13 +18,13 @@ export default function Dashboard({ code }: any) {
   const [searchResults, setSearchResults]: any = useState([]);
   const [playingTrack, setPlayingTrack]: any = useState();
   const [lyrics, setLyrics] = useState("");
- // const [images, setImages] = useState("");
+  // const [images, setImages] = useState("");
 
   function chooseTrack(track: any) {
     setPlayingTrack(track);
     setSearchText("");
     setLyrics("");
-  //  setImages("");
+    //  setImages("");
   }
 
   useEffect(() => {
@@ -36,12 +35,13 @@ export default function Dashboard({ code }: any) {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
-    //      images: playingTrack?.images,
+          albumUrl: playingTrack?.albumUrl,
+          //images: playingTrack?.images,
         },
       })
       .then((res) => {
         setLyrics(res.data.lyrics);
-   //     setImages(res.data.images);
+        //setImages(res.data.images);
       });
   }, [playingTrack]);
 
@@ -124,7 +124,8 @@ export default function Dashboard({ code }: any) {
           />
         ))}
         {searchResults.length === 0 && (
-          <div className="lyrics"
+          <div
+            className="lyrics"
             style={{
               width: "50%",
               minWidth: "18rem",
@@ -133,10 +134,10 @@ export default function Dashboard({ code }: any) {
               marginRight: "auto",
               padding: "1.5rem",
               color: "#d4ff79",
-  //            backgroundColor: "rgba(240, 240, 240, 0.3)",
- // backgroundImage: `url(${image.url})`,
-  textShadow: "-2px 2px 2px #242424",
-  fontFamily: "Monospace",
+              //backgroundColor: "rgba(240, 240, 240, 0.3)",
+              //backgroundImage: `url(${playingTrack?.albumUrl})`,
+              textShadow: "-2px 2px 2px #242424",
+              fontFamily: "Monospace",
               borderRadius: "20px",
               textAlign: "center",
               fontSize: "1.3rem",
