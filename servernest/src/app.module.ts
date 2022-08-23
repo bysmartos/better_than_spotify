@@ -7,7 +7,6 @@ import { LyricsController } from './lyrics/lyrics.controller';
 import { LoginService } from './login/login.service';
 import { LyricsService } from './lyrics/lyrics.service';
 import { RefreshService } from './refresh/refresh.service';
-
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
