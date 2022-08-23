@@ -8,16 +8,19 @@ export default function TrackSearchResult({ track, chooseTrack }: any) {
   return (
     <div
       style={{
+        width: "50%",
+        minWidth: "17.5rem",
         cursor: "pointer",
         display: "flex",
         alignItems: "center",
-        marginTop: "1rem",
-        marginLeft: "0.5rem",
-        marginRight: "0.5rem",
+        marginTop: "0.6rem",
+        marginLeft: "auto",
+        marginRight: "auto",
         padding: "0.3rem",
-        backgroundColor: "rgba(240, 240, 240, 0.4)",
+        backgroundColor: "rgba(221, 243, 255, 0.4)",
         borderRadius: "50px",
-        fontFamily: "Monospace",
+        fontFamily: "Monospace",  
+        boxShadow: "0px 0px 4px #2a213f",
       }}
       onClick={handlePlay}
     >
@@ -32,8 +35,8 @@ export default function TrackSearchResult({ track, chooseTrack }: any) {
         }}
       />
       <div className="ml-3">
-        <div style={{ color: "#1e1e1e", fontWeight: "bold", fontSize: "1rem"}}>{track.title}</div>
-        <div style={{ color: "#505050", fontSize: "0.8rem" }}>{track.artist}</div>
+        <div style={{ color: "#291e63", fontWeight: "bold", fontSize: "1rem"}}>{track.title}</div>
+        <div style={{ color: "#4b39ac", fontSize: "0.8rem" }}>{track.artist}</div>
       </div>
     </div>
   );

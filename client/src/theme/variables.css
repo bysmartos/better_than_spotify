@@ -44,7 +44,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-warning-tint: #ffca22;
 
   /** danger **/
-  --ion-color-danger: #eb445a;
+  --ion-color-danger: #1f1f1f;
   --ion-color-danger-rgb: 235, 68, 90;
   --ion-color-danger-contrast: #ffffff;
   --ion-color-danger-contrast-rgb: 255, 255, 255;
@@ -84,7 +84,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   body {
-    --ion-color-primary: #AFFB0D;
+    --ion-color-primary: #a596f4;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -105,7 +105,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-tertiary-shade: #5d58e0;
     --ion-color-tertiary-tint: #7974ff;
 
-    --ion-color-success: #AFFB0D;
+    --ion-color-success: #462aa3;
     --ion-color-success-rgb: 45, 211, 111;
     --ion-color-success-contrast: #ffffff;
     --ion-color-success-contrast-rgb: 255, 255, 255;
@@ -119,7 +119,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-warning-shade: #e0bb2e;
     --ion-color-warning-tint: #ffd948;
 
-    --ion-color-danger: #ff4961;
+    --ion-color-danger: #1f1f1f;
     --ion-color-danger-rgb: 255,73,97;
     --ion-color-danger-contrast: #ffffff;
     --ion-color-danger-contrast-rgb: 255,255,255;
@@ -154,8 +154,8 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .ios body {
-    --ion-background-color: #000000;
-    --ion-background-color-rgb: 0,0,0;
+    --ion-background-color: none;
+    --ion-background-color-rgb: none;
 
     --ion-text-color: #000000;
     --ion-text-color-rgb: 255,255,255;
@@ -198,8 +198,8 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .md body {
-    --ion-background-color: #121212;
-    --ion-background-color-rgb: 18,18,18;
+    --ion-background-color: none;
+    --ion-background-color-rgb: none;
 
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
@@ -236,18 +236,14 @@ http://ionicframework.com/docs/theming/ */
   }
 }
 @font-face {
-  /* font-family: 'Love';
-  src: url('../assets/fonts/Rift.otf'); */
-  font-family: 'Sansdria';
-  src: url('../assets/fonts/Sansdria.ttf');
-
-  font-family: 'Solid Mono';
-  src: url('../assets/fonts/MonospaceTypewriter.ttf');
-
   font-family: 'Monospace';
-  src: url('../assets/fonts/Roboto-Regular.ttf');
+  src: url('../assets/fonts/Roboto-Regular.ttf') format("truetype");
 }
 
-* {
-  scrollbar-width: none;
-}
+@font-face {
+  font-family: 'Sansdria';
+  src: url('../assets/fonts/Sansdria.ttf') format("truetype");
+  }
+
+*::-webkit-scrollbar {
+  display: none; }

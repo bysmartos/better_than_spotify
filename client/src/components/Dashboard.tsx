@@ -1,11 +1,11 @@
 import React from "react";
 import useAuth from "./useAuth";
 import { IonSearchbar } from "@ionic/react";
-import Player from "./Player"
+import Player from "./Player";
 import SpotifyWebApi from "spotify-web-api-node";
 import { useState, useEffect } from "react";
 //import Player from "./Player"
-import TrackSearchResult from "./TrackSearchResult"
+import TrackSearchResult from "./TrackSearchResult";
 import axios from "axios";
 
 const spotifyApi = new SpotifyWebApi({
@@ -16,30 +16,38 @@ export default function Dashboard({ code }: any) {
   const accesToken = useAuth(code);
   const [searchText, setSearchText] = useState("");
   const [searchResults, setSearchResults]: any = useState([]);
-  const [playingTrack, setPlayingTrack]: any = useState()
-  const [lyrics, setLyrics] = useState("")
+  const [playingTrack, setPlayingTrack]: any = useState();
+  const [lyrics, setLyrics] = useState("");
+  // const [images, setImages] = useState("");
 
   function chooseTrack(track: any) {
-    setPlayingTrack(track)
-    setSearchText("")
-    setLyrics("")
+    setPlayingTrack(track);
+    setSearchText("");
+    setLyrics("");
+    //  setImages("");
   }
 
   useEffect(() => {
-    if (!playingTrack) return
+    if (!playingTrack) return;
 
     axios
       .get("http://localhost:3000/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
+<<<<<<< HEAD
           albumUrl: playingTrack?.albumUrl
+=======
+          albumUrl: playingTrack?.albumUrl,
+          //images: playingTrack?.images,
+>>>>>>> main
         },
       })
-      .then(res => {
-        setLyrics(res.data.lyrics)
-      })
-  }, [playingTrack])
+      .then((res) => {
+        setLyrics(res.data.lyrics);
+        //setImages(res.data.images);
+      });
+  }, [playingTrack]);
 
   console.log(searchResults);
 
@@ -93,13 +101,14 @@ export default function Dashboard({ code }: any) {
         value={searchText}
         onIonChange={(e) => setSearchText(e.detail.value!)}
         placeholder="Search music"
+        className="search-bar"
         style={{
           width: "50%",
           minWidth: "19rem",
           left: "50%",
           transform: "translate(-50%)",
           marginTop: "1.5rem",
-          color: "#AFFB0D",
+          color: "#291e63",
           fontFamily: "Monospace",
         }}
       />
@@ -117,6 +126,7 @@ export default function Dashboard({ code }: any) {
             chooseTrack={chooseTrack}
           />
         ))}
+<<<<<<< HEAD
          {searchResults.length === 0 && (
           <div  style={{ 
           marginTop: "1rem",
@@ -130,11 +140,40 @@ export default function Dashboard({ code }: any) {
           textAlign: "center",
           fontSize: "0.8rem",
           fontWeight: "bold"}}>
+=======
+        {searchResults.length === 0 && (
+          <div
+            className="lyrics"
+            style={{
+              width: "50%",
+              minWidth: "18rem",
+              marginTop: "auto",
+              marginLeft: "auto",
+              marginRight: "auto",
+              padding: "1.5rem",
+              color: "#dbefff",
+              //backgroundColor: "rgba(240, 240, 240, 0.3)",
+              // backgroundImage: `url(${playingTrack?.albumUrl})`,
+              // backgroundRepeat: "no-repeat",
+              // backgroundSize: "cover",
+              fontFamily: "Monospace",
+              borderRadius: "20px",
+              textAlign: "center",
+              textShadow: "2px 1px 2px rgba(41, 30, 99, 0.7),0px 1px 7px rgba(41, 30, 99, 1)",
+              fontSize: "1.4rem",
+              wordBreak: "break-word",
+              whiteSpace: "pre-line",
+            }}
+          >
+>>>>>>> main
             {lyrics}
           </div>
         )}
       </div>
-      <div>  <Player accessToken={accesToken} trackUri={playingTrack?.uri} /></div>
+      <div>
+        {" "}
+        <Player accessToken={accesToken} trackUri={playingTrack?.uri} />
+      </div>
     </div>
   );
 }

@@ -8,9 +8,16 @@ import { LoginService } from './login/login.service';
 import { LyricsService } from './lyrics/lyrics.service';
 import { RefreshService } from './refresh/refresh.service';
 
+import { ConfigModule } from '@nestjs/config';
+
 @Module({
-  imports: [],
-  controllers: [AppController, LoginController, RefreshController, LyricsController],
+  imports: [ConfigModule.forRoot()],
+  controllers: [
+    AppController,
+    LoginController,
+    RefreshController,
+    LyricsController,
+  ],
   providers: [AppService, LoginService, LyricsService, RefreshService],
 })
 export class AppModule {}

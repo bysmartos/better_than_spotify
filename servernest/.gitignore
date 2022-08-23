@@ -1,7 +1,10 @@
 # compiled output
 /dist
 /node_modules
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> main
 
 # Logs
 logs

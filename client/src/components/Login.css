@@ -5,6 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: none;
+    z-index: 1;
 }
 
 .login-button>a {
@@ -14,11 +15,11 @@
 }
 
 .login-button>a:hover {
-transition: background-color 2s ease-out 50ms;
-background-color: #1e1e1e;
+transition: background-color 1s ease-out 50ms;
+background-color: #4b39ac;
 padding: 20px;
-color: #caff59;
 }
+
 
 /* @font-face {
     font-family: 'Love';
