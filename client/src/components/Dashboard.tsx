@@ -33,6 +33,7 @@ export default function Dashboard({ code }: any) {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
+          albumUrl: playingTrack?.albumUrl
         },
       })
       .then(res => {
@@ -78,7 +79,7 @@ export default function Dashboard({ code }: any) {
     });
     return () => (cancel = true);
   }, [searchText, accesToken]);
-
+  
   return (
     <div
       style={{
@@ -125,6 +126,7 @@ export default function Dashboard({ code }: any) {
           backgroundColor: "rgba(240, 240, 240, 0.3)",
           borderRadius: "20px",
           fontFamily: "Solid Mono",
+          backgroundImage: `url(${playingTrack?.albumUrl})`,
           textAlign: "center",
           fontSize: "0.8rem",
           fontWeight: "bold"}}>
