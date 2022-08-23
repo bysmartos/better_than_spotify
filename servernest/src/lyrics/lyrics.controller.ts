@@ -1,5 +1,4 @@
 import { Controller, Get, Req, Res } from '@nestjs/common';
-import lyricsFinder from 'lyrics-finder';
 import { LyricsService } from './lyrics.service';
 
 @Controller('lyrics')

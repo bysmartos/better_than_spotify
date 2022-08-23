@@ -35,12 +35,8 @@ export default function Dashboard({ code }: any) {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
-<<<<<<< HEAD
-          albumUrl: playingTrack?.albumUrl
-=======
           albumUrl: playingTrack?.albumUrl,
           //images: playingTrack?.images,
->>>>>>> main
         },
       })
       .then((res) => {
@@ -87,7 +83,7 @@ export default function Dashboard({ code }: any) {
     });
     return () => (cancel = true);
   }, [searchText, accesToken]);
-  
+
   return (
     <div
       style={{
@@ -126,21 +122,6 @@ export default function Dashboard({ code }: any) {
             chooseTrack={chooseTrack}
           />
         ))}
-<<<<<<< HEAD
-         {searchResults.length === 0 && (
-          <div  style={{ 
-          marginTop: "1rem",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-          padding: "1.5rem",
-          backgroundColor: "rgba(240, 240, 240, 0.3)",
-          borderRadius: "20px",
-          fontFamily: "Solid Mono",
-          backgroundImage: `url(${playingTrack?.albumUrl})`,
-          textAlign: "center",
-          fontSize: "0.8rem",
-          fontWeight: "bold"}}>
-=======
         {searchResults.length === 0 && (
           <div
             className="lyrics"
@@ -165,7 +146,6 @@ export default function Dashboard({ code }: any) {
               whiteSpace: "pre-line",
             }}
           >
->>>>>>> main
             {lyrics}
           </div>
         )}

@@ -22,10 +22,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
-<<<<<<< HEAD
-=======
     "@nestjs/config": "^2.2.0",
->>>>>>> main
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "lyrics-finder": "^21.7.0",
