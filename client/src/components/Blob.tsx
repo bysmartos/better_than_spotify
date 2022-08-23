@@ -1,4 +1,4 @@
-import blobani from "../assets/images/blobanimation.svg";
+import blobani from "../assets/images/blobanimation2.svg";
 
 export default function Blob() {
   return (
@@ -6,8 +6,8 @@ export default function Blob() {
     <img
       src={blobani}
       style={{
-        width: "35%",
-        minWidth: "390px",
+        width: "40%",
+        minWidth: "410px",
         zIndex: "0",
         position: "absolute",
         top: "50%",

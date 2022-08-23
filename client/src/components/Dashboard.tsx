@@ -97,7 +97,6 @@ export default function Dashboard({ code }: any) {
         value={searchText}
         onIonChange={(e) => setSearchText(e.detail.value!)}
         placeholder="Search music"
-        color="danger"
         className="search-bar"
         style={{
           width: "50%",
@@ -105,7 +104,7 @@ export default function Dashboard({ code }: any) {
           left: "50%",
           transform: "translate(-50%)",
           marginTop: "1.5rem",
-          color: "#AFFB0D",
+          color: "#291e63",
           fontFamily: "Monospace",
         }}
       />
@@ -133,7 +132,7 @@ export default function Dashboard({ code }: any) {
               marginLeft: "auto",
               marginRight: "auto",
               padding: "1.5rem",
-              color: "#eeffca",
+              color: "#dbefff",
               //backgroundColor: "rgba(240, 240, 240, 0.3)",
               // backgroundImage: `url(${playingTrack?.albumUrl})`,
               // backgroundRepeat: "no-repeat",
@@ -141,7 +140,7 @@ export default function Dashboard({ code }: any) {
               fontFamily: "Monospace",
               borderRadius: "20px",
               textAlign: "center",
-              textShadow: "2px 1px 2px rgba(37, 37, 37, 1),0px 1px 7px rgba(0, 0, 0, 1)",
+              textShadow: "2px 1px 2px rgba(41, 30, 99, 0.7),0px 1px 7px rgba(41, 30, 99, 1)",
               fontSize: "1.4rem",
               wordBreak: "break-word",
               whiteSpace: "pre-line",
