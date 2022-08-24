@@ -19,7 +19,7 @@ export default function useAuth(code: any): any {
         window.history.pushState({} ,'', "/");
       })
           .catch(() => {
-            window.location.href = "/";
+            //window.location.href = "/";
           });
       }, [code]);
 
@@ -35,7 +35,7 @@ export default function useAuth(code: any): any {
               setExpiresIn(res.data.expiresIn);
             })
             .catch(() => {
-              window.location.href = "/";
+             // window.location.href = "/";
             });
         }, (expiresIn - 60) * 1000);
 
