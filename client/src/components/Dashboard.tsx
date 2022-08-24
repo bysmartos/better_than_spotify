@@ -8,8 +8,9 @@ import { useState, useEffect } from "react";
 import TrackSearchResult from "./TrackSearchResult";
 import axios from "axios";
 
+
 const spotifyApi = new SpotifyWebApi({
-  clientId: "a8a1a4312c3b48d09635eddbb5069353",
+  clientId: process.env.REACT_APP_CLIENT_ID,
 });
 
 export default function Dashboard({ code }: any) {
