@@ -8,7 +8,7 @@ export default function useAuth(code: any): any {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3000/login", {
+      .post("https://better-than-spotify.herokuapp.com/login", {
        code,
       })
       .then((res) => {
@@ -27,7 +27,7 @@ export default function useAuth(code: any): any {
         if (!refreshToken || !expiresIn) return;
         const interval = setInterval(() => {
           axios
-            .post("http://localhost:3000/refresh", {
+            .post("https://better-than-spotify.herokuapp.com/refresh", {
               refreshToken,
             })
             .then((res) => {

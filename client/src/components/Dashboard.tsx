@@ -32,7 +32,7 @@ export default function Dashboard({ code }: any) {
     if (!playingTrack) return;
 
     axios
-      .get("http://localhost:3000/lyrics", {
+      .get("https://better-than-spotify.herokuapp.com/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
