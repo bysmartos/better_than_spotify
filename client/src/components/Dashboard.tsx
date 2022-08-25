@@ -10,7 +10,7 @@ import axios from "axios";
 
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: process.env.REACT_APP_CLIENT_ID,
+  clientId: 'a8a1a4312c3b48d09635eddbb5069353',
 });
 
 export default function Dashboard({ code }: any) {
@@ -32,7 +32,7 @@ export default function Dashboard({ code }: any) {
     if (!playingTrack) return;
 
     axios
-      .get("https://better-than-spotify.herokuapp.com/lyrics", {
+      .get("https://clon-spotify.herokuapp.com/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack?.artist,
